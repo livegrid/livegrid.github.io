@@ -1,6 +1,7 @@
 <script>
 	import '../app.postcss';
 	import './styles.css';
+	
 	// import Toggle from './components/toggle.svelte';
 	// import Slider from './components/slider.svelte';
 	// import Button from './components/button.svelte';
