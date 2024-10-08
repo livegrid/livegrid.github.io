@@ -1,22 +1,28 @@
 # Web App
 
-The inbuilt support for web-app is intended for advanced users as it can lead to glitches and minor issues. However, it is fairly simple and fun to use and if you are interested, please don't hesitate and try it out. Follow the steps below to get into it-
+Once connected to the same WiFi as your Livegrid, you can access the web app by opening a browser and navigating to `http://livegrid.local`. However this sometimes doesn't work, so if you are not able to access it, try using the IP address of your Livegrid instead.
 
-### Connect to WiFi
+The IP address can be found by going to 'WiFi Info' using the touch buttons.
 
-1. `Connect to Livegrid` - When plugged in, Livegrid creates a WiFi network of its own (conveniently called Livegrid). This will expire in a few minutes - so if you don't see it, simply restart your Livegrid. 
-2. `Access the Captive Portal` - Connecting to Livegrid will redirect you to the captive portal.
-3. `Enter your WiFi Credentials` - Find your WiFi network name (SSID) and enter your password.
-4. `Submit and Connect` - Click on `Submit` and you are in.
-5. `Check the IP address` - Click on `Back` to see the IP address assigned to your Livegrid.
-6. `Connect to the Web App` - Open a browser and type in that IP address.
-7. `Enjoy` - You can now enjoy your Livegrid.
+Once connected, it is highly recommended to install a shortcut on your phone. This can be done by clicking on the menu button (top left or top right corner) and then clicking on the `+ Add to Home Screen` button on your mobile device.
 
-### Create a shortcut on your phone
+## Effects
 
-1. `Open the Web App` - Open the web app on your browser.
-2. `Open the browser menu` - Click on the menu button on the top left or top right corner.
-3. `Click on the Add to Home Screen Button` - Click on the `+ Add to Home Screen` button.
-4. `Save` - Click on `Save` and you can now find your Livegrid on your home screen.
-5. Follow this link for a more detailed explanation: [Installing Progressive Web Apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing).
+There is a limited library of effects that you can choose from. This will be expanded in future updates, along with the ability to tweak parameters of each effect.
+
+## Images
+
+Pick one of the pre-loaded images or upload your own. The livegrid will automatically resize the image to fit the screen. This applies to gifs also.
+
+Uploaded images are automatically stretched to 1:1 aspect ratio, so you should manually crop them to your desired size before uploading.
+
+## Text
+
+This is useful for displaying notes etc. You can change the font size. Adjust font color will be added in future updates.
+
+## Settings
+
+There's a lot going on here, so let's break it down.
+
+### 1
 

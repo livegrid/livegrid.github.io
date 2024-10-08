@@ -5,6 +5,8 @@ nav:
   - Aquarium: aquarium.md
   - Web App: webapp.md
   - Hardware: hardware.md
+  - EDMX: edmx.md
+  - MQTT/HA: mqtt.md
   - Development: development.md
   - Troubleshooting: troubleshooting.md
 
