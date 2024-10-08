@@ -1,0 +1,32 @@
+site_name: Livegrid Docs
+site_url: https://livegrid.io/docs
+nav:
+  - Home: index.md
+  - Aquarium: aquarium.md
+  - Web App: webapp.md
+  - Hardware: hardware.md
+  - Development: development.md
+  - Troubleshooting: troubleshooting.md
+
+theme: 
+  # name: readthedocs
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/192.png
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.top
