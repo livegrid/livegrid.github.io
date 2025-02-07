@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://livegrid.io/docs/development/">
+        <link rel="canonical" href="https://livegrid.io/docs/update/">
       
       
-        <link rel="prev" href="../update/">
+        <link rel="prev" href="../mqtt/">
       
       
-        <link rel="next" href="../troubleshooting/">
+        <link rel="next" href="../development/">
       
       
       <link rel="icon" href="../assets/192.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Development - Livegrid Docs</title>
+        <title>Update - Livegrid Docs</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#development" class="md-skip">
+        <a href="#updating-your-livegrid" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Development
+              Update
             
           </span>
         </div>
@@ -344,26 +344,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../update/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Update
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -376,7 +356,76 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Update
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Update
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#method-1-using-the-web-app-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Using the Web App (Recommended)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2-using-web-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Using Web Installer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -385,7 +434,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -430,6 +478,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#method-1-using-the-web-app-recommended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1: Using the Web App (Recommended)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2-using-web-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2: Using Web Installer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -443,11 +517,39 @@
                   
 
 
-<h1 id="development">Development</h1>
-<p><img alt="Secondary Features" src="../assets/Secondary%20features2.jpg" /></p>
-<p>Livegrid is fully open source, and the code for the device is available on <a href="https://github.com/livegrid/OpenMatrix">GitHub</a>.</p>
-<p>This is slightly different from the software running on your device, as it uses private versions of some libraries which I am not allowed to publish open-source. But besides a few branding features, the core logic is the same.</p>
-<p>So make a fork and get started! And if you make any improvements, please do submit a pull request.</p>
+<h1 id="updating-your-livegrid">Updating Your Livegrid</h1>
+<p>There are two methods to update your Livegrid device. Watch the video guide below for a detailed walkthrough:</p>
+<!-- <div class="video-wrapper">
+    <iframe width="560" height="315" src="VIDEO_URL_HERE" title="Livegrid Update Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+<h2 id="method-1-using-the-web-app-recommended">Method 1: Using the Web App (Recommended)</h2>
+<ol>
+<li>Download the correct firmware file (.bin) from our <a href="https://drive.google.com/drive/folders/1QqQZ37dr1o1E2UW8FfLWYng1Vx1vGtFh">firmware repository</a>:</li>
+<li>Choose either "Upcycled" or "Original" version</li>
+<li>
+<p>Can be downloaded on phone or laptop</p>
+</li>
+<li>
+<p>Update through Web App:</p>
+</li>
+<li>Open the web app (find IP address in touch menu if needed)</li>
+<li>If showing 'Disconnected', restart and reconnect to WiFi</li>
+<li>Go to Settings</li>
+<li>Click "Firmware Update" then "Go to Updater"</li>
+<li>Ensure OTA Mode is set to 'Firmware'</li>
+<li>Upload the .bin file</li>
+</ol>
+<p><strong>Note:</strong> If you see a blank or glitchy screen after update, you may have uploaded the wrong firmware version. Simply repeat the process with the other firmware version.</p>
+<h2 id="method-2-using-web-installer">Method 2: Using Web Installer</h2>
+<p>For cases where the Web App method isn't working, you can use the <a href="https://livegrid.github.io/Livegrid-Web-Installer/">Livegrid Web Installer</a>.</p>
+<ol>
+<li>Connect your Livegrid device to your computer via USB</li>
+<li>Access the Web Installer interface</li>
+<li>Upload the correct firmware</li>
+</ol>
+<p><strong>Important:</strong> This method will perform a factory reset on your device, removing all custom settings.</p>
+<p>If you encounter any issues during the update process, try restarting your device and attempting the update again. </p>
 
 
 
