@@ -6,6 +6,8 @@ Weather you have just plugged in your first Livegrid device, or are looking to u
 
 This quickstart guide is the best place to start, but keep reading if you want to know more. You can also refer to the [Quickstart PDF](assets/quickstart.pdf) for additional information.
 
+For firmware updates and maintenance, please refer to our [Update Guide](update.md).
+
 ## Plug-and-Play
 
 Primarily, Livegrid is a plug-and-play device. It uses internal sensors to collect data on temperature, humidity and CO2 levels of the space it's in. 
