@@ -2,9 +2,9 @@
 
 There are two methods to update your Livegrid device. Watch the video guide below for a detailed walkthrough:
 
-<!-- <div class="video-wrapper">
-    <iframe width="560" height="315" src="VIDEO_URL_HERE" title="Livegrid Update Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
+<div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mKSInm_8sm8?si=ycuvYpVrvMIER0k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Method 1: Using the Web App (Recommended)
 
