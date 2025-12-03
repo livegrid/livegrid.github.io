@@ -53,3 +53,10 @@ That being said, the web-app is intended for advanced users as it can lead to gl
 3. `Click on the Add to Home Screen Button` - Click on the `+ Add to Home Screen` button.
 4. `Save` - Click on `Save` and you can now find your Livegrid on your home screen.
 5. Follow this link for a more detailed explanation: [Installing Progressive Web Apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Installing).
+
+## Choose Your Next Step
+
+- **Tinker with Hardware**: Dive into the [hardware overview](hardware.md) and the [development guide](development.md) for schematics, build tooling, and firmware workflows.
+- **Control with Lighting Tools**: Head to the [eDMX guide](edmx.md) to patch the panel into sACN, Art-Net, or raw UDP pipelines.
+- **Automate with Home Assistant**: Follow the [MQTT walkthrough](mqtt.md) to expose Livegrid entities in your smart-home dashboard.
+- **Need Help?**: Check the [troubleshooting section](troubleshooting.md) or join the community discussions linked from the development docs.

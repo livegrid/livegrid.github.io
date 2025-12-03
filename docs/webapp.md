@@ -24,5 +24,22 @@ This is useful for displaying notes etc. You can change the font size. Adjust fo
 
 There's a lot going on here, so let's break it down.
 
-### 1
+### Connectivity
+
+- **Wi-Fi**: View or change the network credentials. If you swap networks, the device reconnects automatically after a short reboot.
+- **MQTT**: Enter broker details and toggle Home Assistant discovery. See the [MQTT guide](mqtt.md) for topic breakdowns.
+- **eDMX**: Pick between sACN, Art-Net, or UDP and adjust universes/ports. Cross-reference the [eDMX section](edmx.md) for protocol-specific tuning.
+
+### Display
+
+- **Brightness**: Choose manual brightness levels or leave it in auto mode tied to the ambient light sensor.
+- **Effects**: Switch between the aquarium, still images, text, or custom effects deployed from the development workflow.
+- **Schedules**: Define quiet hours to dim or turn off the panel automatically.
+
+### System
+
+- **Firmware Updates**: Upload firmware bundles or filesystem images generated via PlatformIO.
+- **Factory Reset**: Wipes all settings while keeping the aquarium save state unless you opt-in to clearing storage.
+
+If an option is unfamiliar, tap the inline help icons—each opens a brief tooltip or links to the relevant section of this documentation.
 

@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#edmx-sacn-art-net" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -309,6 +314,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    EDMX
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -318,6 +334,83 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#edmx-sacn-art-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      eDMX (sACN / Art-Net)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eDMX (sACN / Art-Net)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start Video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pure-udp-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pure UDP Streaming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -421,6 +514,74 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#edmx-sacn-art-net" class="md-nav__link">
+    <span class="md-ellipsis">
+      eDMX (sACN / Art-Net)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eDMX (sACN / Art-Net)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start Video
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pure-udp-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pure UDP Streaming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference Projects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -436,7 +597,136 @@
 
   <h1>EDMX</h1>
 
+<h2 id="edmx-sacn-art-net">eDMX (sACN / Art-Net)</h2>
+<p>Livegrid speaks multiple DMX-over-IP dialects so you can drop it into nearly any lighting workflow, from production-grade consoles to art installations.</p>
+<blockquote>
+<p>Prerequisites: You should be comfortable with IP networking and DMX universe mapping. If you are new to DMX, start by reviewing the <a href="../development/#customize-extend">development guide</a> for firmware-level customization examples.</p>
+</blockquote>
+<h3 id="quick-start-video">Quick Start Video</h3>
+<p>Watch the forthcoming walk-through to see the entire setup flow—from wiring to universe mapping—inside the Livegrid web UI.</p>
+<!-- TODO: Replace VIDEO_ID with the published tutorial ID -->
+<div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    src="https://www.youtube.com/embed/VIDEO_ID" 
+    title="Livegrid eDMX setup" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
 
+<h3 id="protocol-overview">Protocol Overview</h3>
+<ul>
+<li>Control the matrix over DMX/IP networks with sACN (E1.31) or Art-Net.</li>
+<li>Configure in the device web app: <strong>Settings → eDMX</strong></li>
+<li>Protocol: sACN or Art-Net</li>
+<li>Mode: RGB or White</li>
+<li>Multicast: on/off</li>
+<li>Start Universe and Start Address</li>
+<li>Timeout (ms)</li>
+</ul>
+<h3 id="pure-udp-streaming">Pure UDP Streaming</h3>
+<p>When latency and refresh rate matter more than cross-compatibility, switch the protocol selector to <strong>UDP (Raw)</strong>. This transport skips DMX framing and pushes pixel data directly to the renderer loop by sending lightweight chunks of rows.</p>
+<p><strong>Why choose UDP?</strong></p>
+<ul>
+<li>No DMX universe limits: stream arbitrarily wide panels by chunking rows.</li>
+<li>Lower overhead: DMX headers disappear, leaving pure RGB payloads plus an 18-byte metadata header.</li>
+<li>Deterministic timing: packets are applied on arrival without reassembly delays.</li>
+</ul>
+<p><strong>Default configuration</strong></p>
+<ul>
+<li>Local port: <code>4510</code> (configurable under <strong>Settings → eDMX → UDP Port</strong>)</li>
+<li>Chunk height: 2 rows per packet (adjustable; keep payloads &lt;1500 bytes to stay under standard MTU)</li>
+<li>Pixel format: row-major RGB, 8 bits per channel</li>
+<li>Version byte: currently <code>0x01</code> to indicate the first revision of the protocol</li>
+</ul>
+<p><strong>Packet layout</strong></p>
+<p>Each datagram begins with an 18-byte header followed by <code>rows × width × 3</code> bytes of RGB data:</p>
+<pre><code>Offset  Size  Description
+0       1     'O' (0x4f) identifier
+1       1     'M' (0x4d) identifier
+2       1     Protocol version
+3       1     Flags (0x00 = raw RGB)
+4       2     Frame ID (uint16 LE, increments every frame)
+6       2     Chunk index (uint16 LE)
+8       2     Total chunks in this frame (uint16 LE)
+10      2     X offset (uint16 LE, usually 0)
+12      2     Y offset (uint16 LE, row start)
+14      2     Width in pixels (uint16 LE)
+16      2     Rows in this chunk (uint16 LE)
+18      …     RGB payload (rows × width × 3 bytes)
+</code></pre>
+<p>Chunks are reassembled on the device using the frame ID and chunk index. Missing chunks are dropped silently to keep the pipeline flowing.</p>
+<p><strong>Example sender (Node.js)</strong></p>
+<pre><code class="language-js">const dgram = require('dgram');
+const socket = dgram.createSocket('udp4');
+
+const WIDTH = 64;
+const HEIGHT = 64;
+const ROWS_PER_CHUNK = 2;
+const TARGET_HOST = 'livegrid.local';
+const TARGET_PORT = 4510;
+const HEADER_SIZE = 18;
+
+let frameId = 0;
+
+function sendFrame(rgbBuffer) {
+  const bytesPerRow = WIDTH * 3;
+  const totalChunks = Math.ceil(HEIGHT / ROWS_PER_CHUNK);
+  const currentFrameId = frameId++ &amp; 0xffff;
+
+  for (let chunk = 0; chunk &lt; totalChunks; chunk++) {
+    const rowStart = chunk * ROWS_PER_CHUNK;
+    const rows = Math.min(ROWS_PER_CHUNK, HEIGHT - rowStart);
+    const payloadLength = rows * bytesPerRow;
+
+    const packet = Buffer.allocUnsafe(HEADER_SIZE + payloadLength);
+    packet.writeUInt16LE(currentFrameId, 4);
+    packet.writeUInt16LE(chunk, 6);
+    packet.writeUInt16LE(totalChunks, 8);
+    packet.writeUInt16LE(rowStart, 12);
+    packet.writeUInt16LE(WIDTH, 14);
+    packet.writeUInt16LE(rows, 16);
+    rgbBuffer.copy(packet, HEADER_SIZE, rowStart * bytesPerRow, rowStart * bytesPerRow + payloadLength);
+
+    packet[0] = 0x4f; // 'O'
+    packet[1] = 0x4d; // 'M'
+    packet[2] = 0x01; // protocol version
+    packet[3] = 0x00; // flags (raw RGB)
+
+    socket.send(packet, TARGET_PORT, TARGET_HOST);
+  }
+}
+</code></pre>
+<p>Keep your RGB buffer in row-major order (<code>WIDTH * HEIGHT * 3</code> bytes). Call <code>sendFrame</code> at your target frame rate (e.g., 30–60 fps).</p>
+<p><strong>Setup steps</strong></p>
+<ol>
+<li>Open <strong>Settings → eDMX</strong> and select <strong>Protocol: UDP (Raw)</strong>.</li>
+<li>Set the UDP port to match your sender (default <code>4510</code> in firmware examples).</li>
+<li>Choose the pixel ordering (RGB or BGR) that matches your content pipeline.</li>
+<li>Adjust <strong>Rows per chunk</strong> if offered; stay below Ethernet MTU (≈1460 bytes of payload).</li>
+<li>Save settings—the device reboots the eDMX service with the new configuration.</li>
+</ol>
+<p>Use a packet sniffer such as Wireshark to confirm packets are reaching the device if nothing appears on the panel.</p>
+<h3 id="reference-projects">Reference Projects</h3>
+<p>A companion repository will ship with example node scripts, QLC+ show files, and TouchDesigner patches tailored for Livegrid.</p>
+<ul>
+<li>Repository: <!-- TODO: Replace with the public examples repository URL --></li>
+<li>Contents: Streaming samples for sACN/Art-Net, example UDP sender (including the chunked protocol shown above), and reusable fixture definitions.</li>
+<li>Quick start:</li>
+<li>Clone the repo and install dependencies with <code>npm install</code> (for the node examples) or open the provided QLC+ workspace.</li>
+<li>Edit <code>config.json</code> to match your panel pixel count and universe layout.</li>
+<li>Start the sender script or load the show file, then point it at your Livegrid IP.</li>
+</ul>
+<p>Check the README for troubleshooting tips and community contributions once the repository is live.</p>
+<h3 id="common-use-cases">Common Use Cases</h3>
+<ul>
+<li><strong>Stage lighting</strong>: Patch Livegrid as a fixture in MA3, ETC, or QLC+ and stream via sACN.</li>
+<li><strong>Projection mapping companions</strong>: Use Art-Net from TouchDesigner to synchronize graphics on physical panels.</li>
+<li><strong>Media art installations</strong>: Stream high-frame-rate pixel data over raw UDP from a custom renderer for near-zero latency compositions.</li>
+</ul>
 
 
 

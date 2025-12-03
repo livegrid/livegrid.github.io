@@ -376,6 +376,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -385,6 +396,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-schematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware &amp; Schematics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-extend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customize &amp; Extend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -430,6 +505,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-schematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware &amp; Schematics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Development Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customize-extend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customize &amp; Extend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -448,6 +576,44 @@
 <p>Livegrid is fully open source, and the code for the device is available on <a href="https://github.com/livegrid/OpenMatrix">GitHub</a>.</p>
 <p>This is slightly different from the software running on your device, as it uses private versions of some libraries which I am not allowed to publish open-source. But besides a few branding features, the core logic is the same.</p>
 <p>So make a fork and get started! And if you make any improvements, please do submit a pull request.</p>
+<blockquote>
+<p>Prerequisites: Comfortable with C++ (Arduino/ESP-IDF style), PlatformIO or the ESP32 toolchain, and basic Git workflow.</p>
+</blockquote>
+<h2 id="hardware-schematics">Hardware &amp; Schematics</h2>
+<p>Every Livegrid build is driven by open hardware. Schematics and PCB layouts are published so you can fabricate, inspect, or customize the boards that power your display.</p>
+<ul>
+<li><a href="https://oshwlab.com/dhruvkumars/livegrid_copy_copy_copy_copy">Control Board · HUB75 Panels</a>: ESP32-S3 mainboard tuned for standard HUB75 LED matrices. Integrates the LED hub, USB‑C power input, and level shifting required to run 64×64 and 128×64 panels reliably.</li>
+<li><a href="https://oshwlab.com/dhruvkumars/livegrid_copy_copy_copy_copy_copy">Control Board · MBI5153 Upcycled Panels</a>: Alternate mainboard that mates with recycled MBI5153-based modules while keeping the same ESP32S3 controller core. These are being used for the panels saved from landfill.</li>
+<li><a href="https://oshwlab.com/dhruvkumars/livegrid_copy_copy_copy_copy_copy_copy">Sensor Extension Board</a>: Companion board that breaks out the environmental sensors, ambient light sensor, and 3 touch buttons. The idea is to bring the sensor outside to get clean readings and expose touch buttons.</li>
+</ul>
+<p>Each project page above contains the schematic PDF, PCB layout views, and BOM exports. Feel free to fork the designs, panelize them for fabrication, or remix the routing for your own enclosures.</p>
+<h2 id="firmware-architecture">Firmware Architecture</h2>
+<p>The firmware that ships on every Livegrid is derived from the community-maintained <a href="https://github.com/livegrid/OpenMatrix"><code>OpenMatrix</code></a> project. You can find all information in the repo if you would like to modify and build it for your application.</p>
+<p>Only a handful of proprietary art assets differ between the public repository and the production firmware, so you can treat the open project as feature-complete.</p>
+<h2 id="development-environment">Development Environment</h2>
+<p>We recommend developing with <a href="https://platformio.org/">PlatformIO</a> because it bundles the ESP32 toolchain and simplifies dependency management.</p>
+<ol>
+<li>Install <a href="https://code.visualstudio.com/">VS Code</a> and the PlatformIO extension.</li>
+<li>Clone the repository:
+   <code>git clone https://github.com/livegrid/OpenMatrix.git
+   cd OpenMatrix</code></li>
+<li>Run <code>platformio run</code> once to let PlatformIO fetch frameworks and libraries.</li>
+</ol>
+<p>If you prefer the Espressif toolchain manually, you can build with the Arduino CLI as long as you install the required frameworks at the specified versions in <code>platformio.ini</code>.</p>
+<h2 id="customize-extend">Customize &amp; Extend</h2>
+<ul>
+<li><strong>Effects &amp; Animations</strong>: Fork the repository and explore <code>src/renderer</code>. Each effect implements <code>begin()</code>, <code>update()</code>, and <code>render()</code>, so you can clone an existing effect as a starting point.</li>
+<li><strong>Integrations</strong>: Protocol bridges (MQTT, eDMX, UDP) live in <code>src/integrations</code>. Extend these handlers to add new transports or tweak buffering strategies.</li>
+<li><strong>Sensors &amp; Telemetry</strong>: Register additional sensors inside <code>src/sensors</code> and use the MQTT helpers to expose them to Home Assistant automatically.</li>
+<li><strong>Web UI</strong>: The frontend under <code>webui/</code> can be rebuilt with <code>npm install &amp;&amp; npm run build</code>, then flashed via <code>platformio run --target uploadfs</code>.</li>
+</ul>
+<p>Check the <code>examples/</code> folder in the repository for reference sketches demonstrating pixel streaming and REST hooks, and share your findings back via pull requests or discussions.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../edmx/">eDMX Protocols</a>: Stream pixels from lighting desks or custom software, including the low-latency UDP mode.</li>
+<li><a href="../mqtt/">MQTT &amp; Home Assistant</a>: Automate the panel and surface sensor data in smart-home dashboards.</li>
+<li><a href="../webapp/">Web App Guide</a>: Explore the on-device UI for configuration, scheduling, and diagnostics.</li>
+</ul>
 
 
 
