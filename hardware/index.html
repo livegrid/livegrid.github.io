@@ -296,6 +296,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -305,6 +316,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -430,6 +496,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-highlights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembly Highlights
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -445,6 +555,40 @@
 
 <h1 id="hardware">Hardware</h1>
 <p><img alt="Exploded Specifications" src="../assets/Exploded_specs.png" /></p>
+<p>The Livegrid stack is intentionally modular so you can swap panels, sensors, and enclosures without reworking the entire device. The control electronics are published as open hardware; see the schematics and PCB notes inside the <a href="../development/#hardware-schematics">development section</a>.</p>
+<blockquote>
+<p>Prerequisites: Basic familiarity with ESP32 development boards and HUB75 LED panels makes it easier to follow along, but beginners can start with the quick checklist below.</p>
+</blockquote>
+<h2 id="technical-specifications">Technical Specifications</h2>
+<ul>
+<li><strong>Controller</strong>: ESP32-S3 dual-core MCU with integrated Wi-Fi and Bluetooth.</li>
+<li><strong>Displays</strong>: HUB75 RGB matrices (64×64 default) or recycled MBI5153-based modules via the alternate control board.</li>
+<li><strong>Power</strong>: 5 V DC input over USB‑C or header.</li>
+<li><strong>Sensors</strong>: Temperature, humidity, CO₂ (SCD41/SCD40 class), and ambient light.</li>
+<li><strong>Expansion</strong>: I²C breakout header, fan connector, and spare GPIO pads on the backplane.</li>
+<li><strong>Connectivity</strong>: Wi-Fi 2.4 GHz, optional Ethernet via USB-C dongles supported in firmware.</li>
+</ul>
+<h2 id="assembly-highlights">Assembly Highlights</h2>
+<ol>
+<li>Mount the control board directly to the panel using the supplied standoffs.</li>
+<li>Connect the sensor/backplane board with the keyed ribbon cable.</li>
+<li>Feed 5 V into the USB‑C port or JST power header; the regulator handles up to 5 A.</li>
+<li>Route the touch buttons and speaker (if used) through the side headers.</li>
+<li>Close the enclosure and run a smoke test with the built-in demo mode.</li>
+</ol>
+<p>The exploded diagram above shows the default stack-up. For custom enclosures, export the DXF from the PCB projects to align mounting holes.</p>
+<h2 id="common-use-cases">Common Use Cases</h2>
+<ul>
+<li><strong>Desk dashboards</strong>: Mount the panel in a picture frame enclosure and power it from USB.</li>
+<li><strong>Wall-mounted sensors</strong>: Run a thin USB-C cable through the wall and surface-mount the panel flush.</li>
+<li><strong>Installations</strong>: Daisy-chain multiple panels with PoE injectors and sync content using the UDP streaming mode.</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="../development/">Development Guide</a>: Firmware architecture, build instructions, and PCB downloads.</li>
+<li><a href="../edmx/">eDMX</a>: Control the panel from lighting consoles and media servers.</li>
+<li><a href="../mqtt/">MQTT &amp; Home Assistant</a>: Integrate with smart-home automations and dashboards.</li>
+</ul>
 
 
 
