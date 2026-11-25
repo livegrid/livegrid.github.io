@@ -38,13 +38,12 @@ That being said, the web-app is intended for advanced users as it can lead to gl
 
 ### Connect to WiFi
 
-1. `Connect to Livegrid` - When plugged in, Livegrid creates a WiFi network of its own (conveniently called Livegrid). This will expire in a few minutes - so if you don't see it, simply restart your Livegrid. 
-2. `Access the Captive Portal` - Connecting to Livegrid will redirect you to the captive portal.
-3. `Enter your WiFi Credentials` - Find your WiFi network name (SSID) and enter your password.
-4. `Submit and Connect` - Click on `Submit` and you are in.
-5. `Check the IP address` - Click on `Back` to see the IP address assigned to your Livegrid.
-6. `Connect to the Web App` - Open a browser and type in that IP address.
-7. `Enjoy` - You can now enjoy your Livegrid.
+1. `Connect to Livegrid` - When plugged in, Livegrid creates a WiFi network of its own (conveniently called `LiveGrid`). This will expire in a few minutes - so if you don't see it, simply restart your Livegrid.
+2. `Access the Captive Portal` - Connecting to `LiveGrid` will open the setup portal automatically (supports 12 languages and optional Static IP configuration).
+3. `Enter your WiFi Credentials` - Select your WiFi network name (SSID), enter your password, and connect.
+4. `Check the IP address` - Once connected, note the assigned IP address shown in the portal (or check **WiFi Info** in the touch menu).
+5. `Connect to the Web App` - Open a browser and go to `http://livegrid.local` or type in that IP address.
+6. `Enjoy` - You can now enjoy your Livegrid.
 
 ### Create a shortcut on your phone
 

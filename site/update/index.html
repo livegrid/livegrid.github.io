@@ -525,24 +525,24 @@
 
 <h2 id="method-1-using-the-web-app-recommended">Method 1: Using the Web App (Recommended)</h2>
 <ol>
-<li>Download the correct firmware file (.bin) from our <a href="https://drive.google.com/drive/folders/1QqQZ37dr1o1E2UW8FfLWYng1Vx1vGtFh">firmware repository</a>:</li>
-<li>Choose either "Upcycled" or "Original" version</li>
+<li>Download the correct firmware file (<code>.bin</code>) from the <a href="https://github.com/livegrid/OpenMatrix/releases/latest">GitHub Releases page</a>:</li>
+<li><strong><code>livegrid-78x78-upcycled-*.bin</code></strong> for 78×78 Upcycled panels</li>
+<li><strong><code>livegrid-64x64-original-*.bin</code></strong> for 64×64 Original panels</li>
 <li>
-<p>Can be downloaded on phone or laptop</p>
+<p>Can be downloaded on a phone or laptop</p>
 </li>
 <li>
-<p>Update through Web App:</p>
+<p>Update through the Web App:</p>
 </li>
-<li>Open the web app (find IP address in touch menu if needed)</li>
+<li>Open the web app at <code>http://livegrid.local</code> (or find the IP address in the touch menu under <strong>WiFi Info</strong>)</li>
 <li>If showing 'Disconnected', restart and reconnect to WiFi</li>
-<li>Go to Settings</li>
-<li>Click "Firmware Update" then "Go to Updater"</li>
-<li>Ensure OTA Mode is set to 'Firmware'</li>
-<li>Upload the .bin file</li>
+<li>Go to <strong>Settings → Firmware Update → Go to Updater</strong></li>
+<li>Ensure the target is set to <strong>Firmware</strong></li>
+<li>Select or drag-and-drop the <code>.bin</code> file — the updater verifies the image size and checksum automatically and reboots once finished</li>
 </ol>
 <p><strong>Note:</strong> If you see a blank or glitchy screen after update, you may have uploaded the wrong firmware version. Simply repeat the process with the other firmware version.</p>
 <h2 id="method-2-using-web-installer">Method 2: Using Web Installer</h2>
-<p>For cases where the Web App method isn't working, you can use the <a href="https://livegrid.github.io/Livegrid-Web-Installer/">Livegrid Web Installer</a>.</p>
+<p>For cases where the Web App method isn't working (or for a fresh install), you can use the <a href="https://livegrid.github.io/Livegrid-Web-Installer/">Livegrid Web Installer</a> (currently shipping <strong>v2.3.0</strong>).</p>
 <ol>
 <li>Connect your Livegrid device to your computer via USB</li>
 <li>Access the Web Installer interface</li>
