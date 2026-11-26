@@ -24,7 +24,7 @@ There are two methods to update your Livegrid device. Watch the video guide belo
 
 ## Method 2: Using Web Installer
 
-For cases where the Web App method isn't working (or for a fresh install), you can use the [Livegrid Web Installer](https://livegrid.github.io/Livegrid-Web-Installer/) (currently shipping **v2.3.0**).
+For cases where the Web App method isn't working (or for a fresh install), you can use the [Livegrid Web Installer](https://livegrid.github.io/Livegrid-Web-Installer/) (currently shipping **v2.4.0**).
 
 1. Connect your Livegrid device to your computer via USB
 2. Access the Web Installer interface
