@@ -6,7 +6,7 @@ Weather you have just plugged in your first Livegrid device, or are looking to u
 
 This quickstart guide is the best place to start, but keep reading if you want to know more. You can also refer to the [Quickstart PDF](assets/quickstart.pdf) for additional information.
 
-For firmware updates and maintenance, please refer to our [Update Guide](update.md).
+For firmware updates and maintenance, please refer to our [Update Guide](update.md), or check [What's New](changelog.md) to see the latest features and fixes.
 
 ## Plug-and-Play
 

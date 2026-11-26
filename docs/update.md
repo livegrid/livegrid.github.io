@@ -1,5 +1,7 @@
 # Updating Your Livegrid
 
+See [What's New](changelog.md) for the full list of new features, visual upgrades, and fixes in the latest firmware.
+
 There are two methods to update your Livegrid device. Watch the video guide below for a detailed walkthrough:
 
 <div class="video-wrapper">
