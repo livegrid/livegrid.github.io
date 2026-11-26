@@ -4,7 +4,7 @@ Stay up to date with the latest Livegrid firmware releases. Ready to upgrade? Fo
 
 ---
 
-## v2.4 — Major Aquarium, Display & Platform Update
+## v2.4.1 — Major Aquarium, Display & Platform Update
 
 *Biggest release since **v2.0** (October 2025) — available for both **78×78 (Upcycled)** and **64×64 (Original)** panels.*
 
@@ -20,8 +20,7 @@ Stay up to date with the latest Livegrid firmware releases. Ready to upgrade? Fo
   - Eggs now twinkle gently into the water instead of looking like stuck pixels, and creatures enter smoothly from all four edges of the tank.
   - Small boid schools now fade toward white when CO₂ levels rise, matching the health feedback on larger creatures.
   - Fixed triangle rasterization glitches on fish fins, heads, tails, and starfish.
-  - *(64×64 Original panels)* Added a procedural seafloor with rocks, moss, coral, seagrass, and blooming anemones.
-- **Natural lifecycle:** Fixed fish aging precision and end-of-life behavior so creatures grow, reproduce, and cycle naturally over time.
+- **Natural lifecycle & population balance:** Fixed fish aging precision and end-of-life behavior, ensured the tank never drops below 5 creatures, fixed saved eggs spawning off-screen, and rescued saved `LegFin` creatures on reboot.
 
 ### Upgraded Wi-Fi Setup & Over-the-Air Updater
 - **Redesigned Wi-Fi Setup Portal:** Upgraded to a modern captive portal with **12 language options**, a cleaner mobile layout, and optional **Static IP** configuration.
