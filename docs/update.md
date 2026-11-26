@@ -10,10 +10,14 @@ There are two methods to update your Livegrid device. Watch the video guide belo
 
 ## Method 1: Using the Web App (Recommended)
 
-1. Download the correct firmware file (`.bin`) from the [GitHub Releases page](https://github.com/livegrid/OpenMatrix/releases/latest):
-   - **`livegrid-78x78-upcycled-*.bin`** for 78×78 Upcycled panels
-   - **`livegrid-64x64-original-*.bin`** for 64×64 Original panels
-   - Can be downloaded on a phone or laptop
+1. **Download the firmware file (`.bin`) directly** for your Livegrid model *(latest: **v2.4.1** — works on phone or laptop)*:
+
+   | Your Livegrid Model | Direct Download |
+   | :--- | :--- |
+   | **78×78 (Upcycled)** | [Download v2.4.1 for 78×78 (.bin)](https://github.com/livegrid/OpenMatrix/releases/download/v2.4.1/livegrid-78x78-upcycled-v2.4.1.bin) |
+   | **64×64 (Original)** | [Download v2.4.1 for 64×64 (.bin)](https://github.com/livegrid/OpenMatrix/releases/download/v2.4.1/livegrid-64x64-original-v2.4.1.bin) |
+
+   *(Looking for older versions? See all releases on [GitHub Releases](https://github.com/livegrid/OpenMatrix/releases).)*
 
 2. Update through the Web App:
    - Open the web app at `http://livegrid.local` (or find the IP address in the touch menu under **WiFi Info**)

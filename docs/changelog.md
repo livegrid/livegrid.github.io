@@ -1,6 +1,10 @@
 # What's New
 
-Stay up to date with the latest Livegrid firmware releases. Ready to upgrade? Follow the [Update Guide](update.md) or grab the latest binaries from [GitHub Releases](https://github.com/livegrid/OpenMatrix/releases/latest).
+Stay up to date with the latest Livegrid firmware releases. Ready to upgrade? Follow the [Update Guide](update.md), or download **v2.4.1** directly below:
+
+- **78×78 (Upcycled):** [Download v2.4.1 (.bin)](https://github.com/livegrid/OpenMatrix/releases/download/v2.4.1/livegrid-78x78-upcycled-v2.4.1.bin)
+- **64×64 (Original):** [Download v2.4.1 (.bin)](https://github.com/livegrid/OpenMatrix/releases/download/v2.4.1/livegrid-64x64-original-v2.4.1.bin)
+- **USB Fresh Install:** [Livegrid Web Installer](https://livegrid.github.io/Livegrid-Web-Installer/) *(or browse [all GitHub Releases](https://github.com/livegrid/OpenMatrix/releases))*
 
 ---
 
